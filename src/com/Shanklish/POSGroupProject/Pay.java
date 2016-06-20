@@ -9,14 +9,14 @@ public abstract class Pay {
 
 
 	//fix E
-	public double calcSubTotal(ArrayList<E> list){
+/*	public double calcSubTotal(ArrayList<E> list){
 		subTotal =0;
 		for( int i = 0; i < list.size; i ++ ){
 			 subTotal += list.getPrice(i);
 		}
 		
 		return subTotal;
-	}
+	}*/
 	public double calcTax(double subTotal){
 		
 		tax = subTotal * 0.6;
