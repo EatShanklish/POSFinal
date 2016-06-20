@@ -11,5 +11,10 @@ public abstract class Pay {
 	abstract void calcTax();
 	abstract void grandTotal();
 	
+	public int poo(){
+		int poo =4;
+		return poo;
+	}
+	
 }
 
