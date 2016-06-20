@@ -32,10 +32,7 @@ public abstract class Pay {
 	}
 
 	
-	public int poo(){
-		int poo =4;
-		return poo;
-	}
+	
 	
 }
 
