@@ -1,6 +1,9 @@
 package com.Shanklish.POSGroupProject;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Array;
@@ -32,20 +35,40 @@ public abstract class Pay {
 =======
 	}
 	
+<<<<<<< HEAD
 	static public double calcTax(double subTotal){
 >>>>>>> 1281bef570f5ed510f418c3bcc1a95614c64fa37
 		
+=======
+	static public double calcTax(double subTotal)
+	{
+>>>>>>> 5ced8b994a98b63aca535871c99430241fcb6c25
 		tax = subTotal * 0.6;
-		
-		
 		return tax;
 	}
 	
-	static public double grandTotal(double tax, double subTotal){
-		
+	static public double grandTotal(double tax, double subTotal)
+	{	
 		grandTotal = tax + subTotal;
-		
 		return grandTotal;
+	}
+	
+	
+	//Will print all the items into the console
+	// Pay.viewProducts();
+	public void viewProducts() throws IOException
+	{
+	    String fileName = "Groceries.txt";
+	    String line = null;
+	    
+	    FileReader fileReader = new FileReader(fileName);
+	    BufferedReader bufferedReader = new BufferedReader(fileReader);
+	    
+	    while( (line = bufferedReader.readLine()) != null)
+		{
+		    System.out.println(line);
+		}
+	    
 	}
 
 	
@@ -59,6 +82,10 @@ public abstract class Pay {
 	    BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);  	   
 	    
 	    bufferedWriter.append(p.getName() + "\t" + p.getPrice());
+	    bufferedWriter.append("\n");
+	    
+	    bufferedWriter.close();
+	    fileWriter.close();
 	}
 }
 
