@@ -16,8 +16,12 @@ public abstract class Pay {
 
 
 	//fix E
+<<<<<<< HEAD
+/*	public double calcSubTotal(ArrayList<E> list){
+=======
 	 public static double calcSubTotal(ArrayList<E> list)
 	 {
+>>>>>>> 1281bef570f5ed510f418c3bcc1a95614c64fa37
 		subTotal =0;
 		for( int i = 0; i < list.size; i ++ )
 		    {
@@ -25,10 +29,20 @@ public abstract class Pay {
 		    }
 		
 		return subTotal;
+<<<<<<< HEAD
+	}*/
+	public double calcTax(double subTotal){
+=======
 	}
 	
+<<<<<<< HEAD
+	static public double calcTax(double subTotal){
+>>>>>>> 1281bef570f5ed510f418c3bcc1a95614c64fa37
+		
+=======
 	static public double calcTax(double subTotal)
 	{
+>>>>>>> 5ced8b994a98b63aca535871c99430241fcb6c25
 		tax = subTotal * 0.6;
 		return tax;
 	}
