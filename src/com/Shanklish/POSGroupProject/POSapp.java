@@ -1,4 +1,6 @@
 package com.Shanklish.POSGroupProject;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 public class POSapp {
 	
@@ -7,19 +9,20 @@ public class POSapp {
 	//declaring variables
 	static boolean shop = false;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		System.out.println("Hello. Welcome to your neighborhood grocery story\n");
 		System.out.println("Here is a list of the current items we have in stock\n");
-	//NEEDS TO PRINT FROM FILE THE LIST OF STOCK
+		Pay.viewProducts();
 		
 		
-	shop =Validator.getYesNo(scan, "Would you like to make a purchase?\n");
+	shop =Validator.getYesNo(scan, "\nWould you like to make a purchase?\n");
 	
 	
 	
 		while (shop){
 		
-			System.out.println("poo");
+			ArrayList <Product> shoppingCart = new ArrayList<Product>();
+			shoppingCart.add()
 			
 			
 			
@@ -27,6 +30,8 @@ public class POSapp {
 			
 			shop =  Validator.getYesNo(scan, "Would you like to add anything else to your cart?");
 		}
+		
+		
 		
 		
 		

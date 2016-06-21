@@ -42,7 +42,7 @@ public abstract class Pay {
 	
 	//Will print all the items into the console
 	// Pay.viewProducts();
-	public void viewProducts() throws IOException
+	public static void viewProducts() throws IOException
 	{
 	    String fileName = "Groceries.txt";
 	    String line = null;
